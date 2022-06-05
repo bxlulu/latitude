@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleUp.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="col-md-2 box headerfont">
+            <a href="index.html" style="color:white">
+                Latitude
+            </a>
+        </div>
+        <nav class="row container col-sm-9" style="float: center">
+            <ul class="headblock">
+                <li class="col-md-6"></li>
+                <li><select name="Plots" class="align-right col-md-2 col-xs-2 text-color" style="border:0px; outline:10px; font-weight:bold; text-align: center; margin-top: 2%" onchange="location = this.value;">
+                    <option selected disabled class="text-color" style="display:inline">Plots</option>
+                    <option value="Max_Temperature.html">Max Temperature</option>
+                    <option value="Humidity.html">Humidity</option>
+                    <option value="cloud.html">Cloudiness</option>
+                    <option value="Wind_Speed.html">Wind Speed</option>
+                </select></li>
+                <li>
+                    <a class="align-right col-md-2 col-xs-4 text-color" style="font-weight:bold; text-align: center; margin-top: 2%" 
+                    href="comparison.html">
+                        Comparison
+                    </a>
+                </li>
+                <li>
+                    <a class="align-right col-md-2 col-xs-4 text-color" style="font-weight:bold; text-align: center; margin-top: 2%"
+                    href="data.html">
+                        Data
+                    </a>
+                </li>
+                </ul>
+        </nav>
+    </header>
+
+    <div class="grey row" style="background: #E8E8E8">
+        <!--First of Two Columns-->
+        <div class="col-sm-1"></div>
+        <main class="col-sm-6 container box1">
+            <h2 style="color:teal; font-family: 'Times New Roman'; font-weight: bold">Summary: Latitude vs. X</h2>
+            <hr>
+            <img src="11_web_homework_Instructions_Resources_assets_images_Fig1.png" 
+            alt="Max Temperature" align='left' height="250" width="350">
+            <p class="text-color spacing">The purpose of this project was to analzye how weather changes as you get closer to the equator. 
+            To accomplish this analysis, we first pull data from teh OpenWeatherMap API to assemble a dataset on over 500 cities.
+            </p>
+            <br>
+            <p class="text-color spacing">After assembling the dataset, we used Matplotlib to plot various aspects of teh weather vs. latitute. Factors we looked at 
+                included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created 
+                as part of the analysis, as well as explanations and descriptions of any trends and correleations witnessed.
+            </p>
+        </main>
+
+
+        <!--Second of Two Columns-->
+        <aside class="col-md-4 container box1">
+            <h2 style="color:teal; font-family: 'Times New Roman'; font-weight: bold">Visualizations</h2>
+            <hr>
+            <ul style="list-style-type: none; margin: 10;">
+                <li class="col-md-6 col-xs-3">
+                    <a href="Max_Temperature.html">
+                        <img src="11_web_homework_Instructions_Resources_assets_images_Fig1.png" alt="Max Temerature" height="130" width="130" align='center'>
+                    </a>
+                </li>
+                <li class="col-md-6 col-xs-3">
+                    <a href="Humidity.html">
+                        <img src="11_web_homework_Instructions_Resources_assets_images_Fig2.png" alt="Humidity" height="130" width="130" align='center'>
+                    </a>
+                </li>
+                <li class="col-md-6 col-xs-3">
+                    <a href="cloud.html">
+                        <img src="11_web_homework_Instructions_Resources_assets_images_Fig3.png" alt="Cloudiness" height="130" width="130" align='center'>
+                    </a>
+                </li>
+                <li class="col-md-6 col-xs-3">
+                    <a href="Wind_Speed.html">
+                        <img src="11_web_homework_Instructions_Resources_assets_images_Fig4.png" alt="Wind Speed" height="130" width="130" align='center'>
+                    </a> 
+                </li>
+                </ul>
+        </aside>
+    </div>
+
+    <div class=" container footer">
+        <p style="margin-top:0.5%">&copy; Copyright Coding Bootcamp 2019</p>
+    </div>
+
+</body>
+</html>

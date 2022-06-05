@@ -1,0 +1,64 @@
+.box {
+    min-height: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 800;
+    color:black;
+    background: teal;
+}
+
+.headerfont {
+    font-size: 21pt;
+    font-family: "Times New Roman";
+    font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.headblock {
+    display: block;
+    padding: 5px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+  }
+
+.text-color {
+    color: dimgrey;
+}
+
+.box1 {
+    min-height: 5px;
+    padding: 25px;
+    margin: 10px;
+    background: white;
+}
+
+header {
+    background: white;
+}
+
+.spacing {
+    line-height: 2;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #626D75;
+    color: white;
+    text-align: center;
+    border-top: 5px solid teal;
+    font-size: 8pt;
+ }
+
+.plot-title {
+    text-align: center;
+    margin-top: 3%;
+    color: teal;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: "Times New Roman";
+}
